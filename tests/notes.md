@@ -1,0 +1,1 @@
+Dossier contenant les tests du programme testGen.

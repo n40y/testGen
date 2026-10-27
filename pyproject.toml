@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "testgen"
+version = "0.1.0"
+description = "Générateur de tests automatisés assisté par IA (prototype)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pytest",
+    "pytest-cov",
+    "python-dotenv",
+    # + le SDK du fournisseur choisi (à ajouter quand llm.py sera écrit)
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+# Évite que « pytest » lancé à la racine collecte references/ et samples/
+# (les tests de référence échouent volontairement sur les fonctions bugguées).
+testpaths = ["tests"]

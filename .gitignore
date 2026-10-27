@@ -1,0 +1,21 @@
+# Secrets : ne jamais envoyer sur Git
+.env
+
+# Environnement virtuel
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+
+# Tests et couverture
+.pytest_cache/
+.coverage
+coverage.json
+
+# Tests produits par l'IA (le dossier est conservé grâce à .gitkeep)
+generated/*
+!generated/.gitkeep

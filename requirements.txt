@@ -1,0 +1,4 @@
+pytest
+pytest-cov
+python-dotenv
+# + le SDK du fournisseur choisi (à ajouter quand llm.py sera écrit)
